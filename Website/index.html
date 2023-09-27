@@ -35,6 +35,50 @@
         <div id="page2">
 
         </div>
+
+
+
+
+
+
+
+ <div class="container">  
+        <form id="contact" action="" method="post">
+            
+            <div id="c1">
+            <label>
+                <select name="CropName" required>
+                    <option value="" disabled selected>Select Crop</option>
+                    <option value="Wheat">Wheat</option>
+                    <option value="Rice">Rice</option>
+                    <option value="Corn">Corn</option>
+                    <option value="vegetable">vegetable</option>
+                    <!-- Add more crop options as needed -->
+                </select>
+            </label>
+        </div>
+        <div id="c2">
+            <label>
+                <input type="number" name="Quantity" placeholder="Quantity (in kg or units)" required>
+            </label>
+        </div>
+            <label>
+                <input type="number" name="data" placeholder="data" required>
+            </label>
+            <label>
+                <textarea placeholder="Your best suggestion here...." tabindex="5" required></textarea>
+            </label>
+            <label>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </label>
+          
+        </form>
+    </div>
+    
+
+
+
+        
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
