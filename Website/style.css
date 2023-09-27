@@ -105,3 +105,124 @@ video{
 
 
 
+
+
+
+
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(189, 187, 187);
+    border-radius: 5px;
+  }
+  
+  /* Styles for the form */
+  #contact {
+    text-align: center;
+  }
+  
+  /* Styles for the form header */
+  #contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for form fields */
+  label {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the select input */
+  select {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  #c1{
+    display: inline;
+  }
+
+  #c2{
+    display: inline;
+    border-width: 200px;
+  }
+  
+  /* Styles for the number input */
+  input[type="number"] {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-width: 50%;
+    font-size: 16px;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  select[type="CropName"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #4984c4;
+  }
+
+  select:hover {
+    color: #f1f1f1;
+    background-color: #4c86af;
+  }
+  
+ /* Style the CropName select element */
+
+  textarea {
+    width: 100%;
+    padding: 60px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; /* Allows vertical resizing of the textarea */
+    color: black;
+  }
+  
+  /* Styles for the submit button */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Hover effect for the submit button */
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Additional styles can be added as needed */
+  
+  /* Optional: Add styles for form validation messages here */
+/* contact form */
+
+
+
+
+
