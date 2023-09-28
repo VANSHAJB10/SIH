@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 121</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
+    <link rel="stylesheet" href="styles.css">
 <body>
     <div id="nav">
         <img src="./assets/AASAAN (2).png"> 
@@ -58,11 +56,14 @@
 
       <div class="container">  
         <form id="contact" action="" method="post">
+
+            <h3></h3>
             
             <div id="c1">
-            <label>
+                <label class="me">Fill your crop details:</label><br />
+           
                 <select name="CropName" required>
-                    <option value="" disabled selected>Select Crop</option>
+                    <option value="select" >Select Crop</option>
                     <option value="Wheat">Wheat</option>
                     <option value="Rice">Rice</option>
                     <option value="Corn">Corn</option>
@@ -71,24 +72,13 @@
                 </select>
             </label>
         </div>
-        <div id="c2">
-            <label>
-                <input type="number" name="Quantity" placeholder="Quantity (in kg or units)" required>
-            </label>
-        </div>
-            
-            <label>
-                <input type="number" name="data" placeholder="data" required>
-            </label>
-            <label>
-                <textarea placeholder="Your best suggestion here...." tabindex="5" required></textarea>
-            </label>
-            <label>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            </label>
+        <label>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </label>
 
+        <textarea id="data-textbox" rows="10" cols="50" readonly></textarea>
 
-              <!-- <script>
+        <!-- <script>
             // Function to fetch data from the API and display it in the textbox
             async function fetchDataAndDisplay() {
                 try {
@@ -110,6 +100,8 @@
             // Call the fetchDataAndDisplay function when the page loads
             window.onload = fetchDataAndDisplay;
         </script> -->
+    
+            
           
         </form>
     </div>
