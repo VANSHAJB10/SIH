@@ -1,3 +1,8 @@
 1. prob statement
 A lot of food grains are wasted if grown more than the maximum storage capacity+export orders from different countries. Minimizing wastage of food is very crucial, more than 40% of food produced is wasted in India. 
 Growing just enough quantities not to overload the warehouses is very important. It will save Resources, Efforts of agricultural ministry, and of farmers, Time and Money of farmers as they will need to produce enough crops that will be purchased by the ministry for sure. Farmers will be able to get best suggestions on how to effectively use their land to earn maximum profit.
+
+2. solution :
+An easy-to-use platform for ministries where they will be able to get the best possible suggestions for minimizing crop wastage during exports.
+By just entering the Crop name and country name that ordered the crop, they will get suggestions from AI, on the basis of thoroughly analyzed data of past export order quantity.
+Raw data will be analyzed by Power BI and then will be sent to database. The data will be sent to AI, which will then give suggestions that the ministry will recommend to farmers.(as farmers might not accept a middleman to suggest them which crop to grow.)
