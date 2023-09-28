@@ -86,6 +86,30 @@
             <label>
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </label>
+
+
+              <!-- <script>
+            // Function to fetch data from the API and display it in the textbox
+            async function fetchDataAndDisplay() {
+                try {
+                    const response = await fetch("https://api.example.com/data"); // Replace with the actual API URL
+                    if (response.ok) {
+                        const data = await response.json();
+                        const dataTextbox = document.getElementById("data-textbox");
+    
+                        // Convert the data to a string and set it in the textbox
+                        dataTextbox.value = JSON.stringify(data, null, 4);
+                    } else {
+                        console.error("Error: Unable to fetch data from the API.");
+                    }
+                } catch (error) {
+                    console.error(`Error: ${error.message}`);
+                }
+            }
+    
+            // Call the fetchDataAndDisplay function when the page loads
+            window.onload = fetchDataAndDisplay;
+        </script> -->
           
         </form>
     </div>
