@@ -1,0 +1,20 @@
+Crops,Ministry,Quantity Grown ,Quantity Ordered ,Crops export,Wastage
+Wheat,Agriculture,1000 tons,900 tons,900 tons,100 tons
+Rice,Agriculture, 1400 tons,1300 tons,1300 tons,100 tons
+Corn,Agriculture,800 tons,750 tons,750 tons,50 tons
+Barley,Agriculture,500 tons,400 tons ,400 tons ,100 tons
+Soybeans,Agriculture,1500 tons,920 tons,920 tons,580 tons
+Potatoes,Agriculture,900 tons,720 tons,720 tons,180 tons
+Tomatoes,Agriculture,700 tons,580 tons,580 tons,180 tons
+Carrots,Agriculture,1200 tons,1050 tons,1050 tons,150 tons
+Apples ,Agriculture,1500 tons,1400 tons,1400 tons,100 tons
+Bananas ,Agriculture,1300 tons,900 tons,900 tons,300 tons
+Oranges,Agriculture,950 tons,800 tons,800 tons,150 tons
+Grapes,Agriculture,850 tons,800 tons,800 tons,50 tons
+Coffee,Agriculture,780 tons,760 tons,760 tons,20 tons
+Tea ,Agriculture,700 tons,610 tons,610 tons,90 tons
+Cocoa,Agriculture,480 tons,480 tons,480 tons,0 tons
+Cabbage,Agriculture,720 tons,720 tons,720 tons,0 tons
+Lettuce,Agriculture,920 tons,900 tons,900 tons,20 tons
+Peppers ,Agriculture,950 tons,930 tons,930 tons,20 tons
+Onions,Agriculture,800 tons,800 tons,800 tons,0 tons
