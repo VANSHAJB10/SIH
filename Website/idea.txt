@@ -1,0 +1,3 @@
+1. prob statement
+A lot of food grains are wasted if grown more than the maximum storage capacity+export orders from different countries. Minimizing wastage of food is very crucial, more than 40% of food produced is wasted in India. 
+Growing just enough quantities not to overload the warehouses is very important. It will save Resources, Efforts of agricultural ministry, and of farmers, Time and Money of farmers as they will need to produce enough crops that will be purchased by the ministry for sure. Farmers will be able to get best suggestions on how to effectively use their land to earn maximum profit.
