@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 121</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 <body>
     <div id="nav">
         <img src="./assets/AASAAN (2).png"> 
@@ -15,13 +15,10 @@
         <h3>Contact Us</h3>
     </div>
 
-    <div id="cursor">
-        
-    </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
 
-    <video autoplay loop muted src="./assets/background_video.mp4"></video>
-    <!-- sometimes browsers block the video with sound the attribute - 'muted' is written -->
-
+    <video autoplay loop muted src="./assets\WhatsApp Video 2023-09-28 at 09.43.01.mp4"></video>
     <div id="main">
         <div id="page1">
             <h1>THANKS FOR SAVING RESOURCES.</h1>
@@ -46,14 +43,6 @@
                   
                 </div>
               </div>
-        
-
-
-
-
-
-
-
       <div class="container">  
         <form id="contact" action="" method="post">
 
@@ -61,13 +50,27 @@
             
             <div id="c1">
                 <label class="me">Fill your crop details:</label><br />
-           
                 <select name="CropName" required>
-                    <option value="select" >Select Crop</option>
+                    <option value="" disabled selected>Select Crop</option>
                     <option value="Wheat">Wheat</option>
                     <option value="Rice">Rice</option>
                     <option value="Corn">Corn</option>
-                    <option value="vegetable">vegetable</option>
+                    <option value="Barley">Barley</option>
+                    <option value="Soybeans">Soybeans</option>
+                    <option value="Potatoes">Potatoes</option>
+                    <option value="Tomatoes">Tomatoes</option>
+                    <option value="Carrots">Carrots</option>
+                    <option value="Apples">Apples</option>
+                    <option value="Bananas">Bananas</option>
+                    <option value="Oranges">Oranges</option>
+                    <option value="Grapes">Grapes</option>
+                    <option value="Coffee">Coffee</option>
+                    <option value="Tea">Tea</option>
+                    <option value="Cocoa">Cocoa</option>
+                    <option value="Cabbage">Cabbage</option>
+                    <option value="Lettuce">Lettuce</option>
+                    <option value="Peppers">Peppers</option>
+                    <option value="Onions">Onions</option>
                     <!-- Add more crop options as needed -->
                 </select>
             </label>
@@ -75,38 +78,11 @@
         <label>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
         </label>
-
-        <textarea id="data-textbox" rows="10" cols="50" readonly></textarea>
-
-        <!-- <script>
-            // Function to fetch data from the API and display it in the textbox
-            async function fetchDataAndDisplay() {
-                try {
-                    const response = await fetch("https://api.example.com/data"); // Replace with the actual API URL
-                    if (response.ok) {
-                        const data = await response.json();
-                        const dataTextbox = document.getElementById("data-textbox");
-    
-                        // Convert the data to a string and set it in the textbox
-                        dataTextbox.value = JSON.stringify(data, null, 4);
-                    } else {
-                        console.error("Error: Unable to fetch data from the API.");
-                    }
-                } catch (error) {
-                    console.error(`Error: ${error.message}`);
-                }
-            }
-    
-            // Call the fetchDataAndDisplay function when the page loads
-            window.onload = fetchDataAndDisplay;
-        </script> -->
-    
-            
-          
+        <label>
+            <textarea id="api-output" rows="10" cols="50" readonly></textarea>
+        </label>
         </form>
     </div>
-
-
             <div id="green-div">
                     <img
                       src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg"
@@ -120,21 +96,48 @@
                       alt=""
                     />
                   </div>
-    
- </div>
-
-
-        
-<!--     </div> -->
+                </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- scroll trigger is used to add animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
         integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <script>// Your JavaScript code here
+        crsr = document.querySelector("#cursor");
+        crsrblur = document.querySelector("#cursor-blur");
+        
+        document.addEventListener("mousemove", function (dets) {
+            crsr.style.left = dets.x + "px";
+            crsr.style.top = dets.y + "px";
+            crsrblur.style.left = dets.x - 150 + "px";
+            crsrblur.style.top = dets.y - 150 + "px";
+        });
+        gsap.to("#nav",{
+            backgroundColor:"#000",
+            duration:1,
+            height: "100px",
+            scrollTrigger:{
+                trigger:"#nav",
+                scroller: "body",
+                // markers: true
+                start: "top -11%",
+                scrub: 2
+            }
+        })
+        
+        gsap.to("#main",{
+            backgroundColor:"#000",
+            scrollTrigger:{
+                trigger:"#main",
+                scroller:"body",
+                markers: true,
+                start: "top -25%",
+                end:"top -70%",
+                scrub:2
+            }
+        })</script>
 </body>
-
 </html>
